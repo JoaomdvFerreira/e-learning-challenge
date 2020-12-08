@@ -1,10 +1,19 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Exercises from './pages/ExercisesPage/exercises';
+
+import LandingPage from "./pages/LandingPage/landing";
 function App() {
   return (
-    <div>
-      <h1>Title</h1>
-      <h2>SubTitle</h2>
-      <p>Paragraphs</p>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={LandingPage}></Route>
+        <Route exact path="/exercises" component={Exercises}></Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

@@ -1,0 +1,21 @@
+.footer__container{
+    padding-bottom: 50px;
+    margin: 0 auto;
+    z-index: 1;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.footer__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__info p{
+    font-size: 1.3rem;
+}

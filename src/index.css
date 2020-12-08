@@ -10,12 +10,71 @@ body {
 h1{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
+  font-size: 18px;
 }
 
 h2{
   font-weight: 400;
+  font-size: 14px;
+  margin: 0;
 }
 
 p{
   font-weight: 300;
+  font-size: 12px;
+}
+
+.dark-blue{
+  color: #00649F
+}
+
+.dark-blue-bg{
+  background-color: #00649F;
+}
+
+.blue-green{
+  color: #01AAC1
+}
+
+.blue-green-bg{
+  background-color: #01AAC1;
+}
+
+.light-blue{
+  color: #00DBE7;
+}
+
+.green{
+  color: #97ECC5;
+}
+
+.green-bg{
+  background-color: #97ECC5;
+}
+
+button{
+  background: #00649F;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.button-small{
+  padding: 3px 16px;
+}
+
+button.button-medium{
+  padding: 6px 32px;
+}
+
+button.button-big{
+  padding: 12px 64px;
+}
+
+button:hover{
+  transition: all 0.3s ease-out;
+  background: #01AAC1;
 }

@@ -1,0 +1,81 @@
+.cardList__section{
+    padding: 60px 0;
+    min-height: 550px;
+}
+
+.cardList__container{
+    z-index: 1;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.cardList__button-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cardList__button-reset{
+    display: inline-flex;
+    align-items: center;
+}
+
+.cardList__button-reset > svg{
+    margin-right: 0.5rem;
+}
+
+.cardList__button-choice{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 20%;
+    transition: .5s ease;
+    opacity: 0;
+    color: black;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    cursor:pointer;
+}
+.cardList__button-choice > svg:hover{
+    fill: #00649F;
+}
+
+.cardList__grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+.card__wrapper{
+    max-width: 350px;
+    width: 350px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card__wrapper:hover .cardList__button-choice{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px){
+    .cardList__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .cardList__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .card__wrapper{
+        width: 100%;
+    }
+
+    .cardList__button-reset{
+        width: 100%;
+    }
+}
